@@ -1,0 +1,136 @@
+body {
+  background-color:#111111;
+    background-size: cover;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  transition: background-color 0.5s, color 0.5s;
+}
+    /* サイドバーのスタイル */
+    .sidebar {
+      height: 100%;
+      width: 0;  /* 初期状態では閉じる */
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333333;
+      overflow-x: hidden;
+      transition: 0.3s;  /* 開閉時のアニメーション */
+      padding-top: 60px;
+    }
+
+    /* サイドバーのリンクのスタイル */
+    .sidebar a {
+      padding: 15px 10px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.2s;
+    }
+
+    .sidebar a:hover {
+      background-color: #575757;
+    }
+
+    /* サイドバーを開閉するボタン */
+    .open-btn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      border-radius:20%;
+    }
+    /* サイドバーが開いている時のスタイル */
+    .sidebar.open {
+      width: 250px;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* タイトル部分に背景画像を設定 */
+.title {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGteH0LDet0636ouB3OWElcInVYOrHZ9prdw&s'); /* 画像パスを指定 */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 300px; /* ヘッダーの高さ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 600%; /* 元のサイズを維持 */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* テキストの影を追加 */
+    margin: 0;
+}
+/* 黒い背景を設定 */
+body::after {
+    content: "";
+    position: absolute;
+    top: 300px; /* タイトル部分の下から始まるように調整 */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 200px); /* 残りのページ全体を黒背景にする */
+  
+    z-index: -1; /* これがコンテンツの後ろに表示されるようにする */
+}
+@keyframes slideIn{
+  0%{
+    transform:translateY(100%);
+    opacity:0;
+ 
+  }
+  100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+}
+.border1 {
+  display:flex;  
+  position: relative;
+    border: 3px solid #4d4d4d;
+    border-radius: 15px;
+    padding: 2em;
+    height:90px;
+    width: 500px;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px auto;
+     transform: translateY(-100%); /* 最初は画面の外に隠れる */
+      opacity: 0;
+      animation: slideIn 1s forwards; 
+}
+.heading1 {
+    font-weight: 600;
+    position:static;
+    margin-top: -45px;
+    margin-left: -10px;
+  display:flex;
+}
+.text1 {
+    margin-left: 0px;
+}
+h1{
+font-size:50px;
+  margin-left:40%;
+}
+
+    /* フッターのスタイル */
+    .custom-footer {
+      border-top: 2px solid #333;
+      padding: 10px;
+      text-align: center;
+      background-color: #2f3030;
+      height:10vh;
+ margin-top:200vh;   
+    }
+
