@@ -100,8 +100,8 @@ body::after {
     border: 3px solid #4d4d4d;
     border-radius: 15px;
     padding: 2em;
-    height:90px;
-    width: 500px;
+    height:180px;
+    width: 600px;
     text-align: center;
     font-size: 20px;
     margin: 20px auto;
@@ -118,6 +118,7 @@ body::after {
 }
 .text1 {
     margin-left: 0px;
+  margin-top:30px;
 }
 h1{
 font-size:50px;
@@ -131,6 +132,5 @@ font-size:50px;
       text-align: center;
       background-color: #2f3030;
       height:10vh;
- margin-top:200vh;   
+ margin-top:500vh;   
     }
-
