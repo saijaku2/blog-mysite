@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プログラミングに興味を持つあなたへ</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .article {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        p {
+            color: #555;
+        }
+       /* サイドバーのスタイル */
+    .sidebar {
+      height: 100%;
+      width: 0;  /* 初期状態では閉じる */
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333333;
+      overflow-x: hidden;
+      transition: 0.3s;  /* 開閉時のアニメーション */
+      padding-top: 60px;
+    }
+
+    /* サイドバーのリンクのスタイル */
+    .sidebar a {
+      padding: 15px 10px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.2s;
+    }
+
+    .sidebar a:hover {
+      background-color: #575757;
+    }
+
+    /* サイドバーを開閉するボタン */
+    .open-btn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      border-radius:20%;
+    }
+    /* サイドバーが開いている時のスタイル */
+    .sidebar.open {
+      width: 250px;
+}
+    </style>
+</head>
+<body>
+  <div id="sidebar" class="sidebar">
+    <a href="https://mysite.f5.si">ホーム</a>
+    <a href="#" class="href1"></a>
+    <a href="#" class="https://mysite-made.f5.si">最弱が作ったサイト</a>
+    <a href="#" class="href3">このサイトについて</a>
+         <a href="https://blog-mysite.f5.si">ブログ</a>
+    <div class="article">
+        <h1>プログラミングを始めよう！</h1>
+        <p>みなさん、ウェブサイトを開くとき、その裏側でどんな仕組みが動いているのか考えたことはありますか？「サイトのプログラミングってどんな仕組みなんだろう？」と疑問に思ったことがある方も多いかもしれません。実は、私たちが普段見ているウェブページは、特定のプログラミング言語で構築されており、これらの言語が協力して私たちに表示されています。</p>
+
+        <h2>プログラミングは誰でもできる！</h2>
+        <p>「でも、プログラミングなんて難しそう…」と思うかもしれませんが、実はプログラミングは誰でもできるスキルです！特に、HTMLやCSSは比較的シンプルで、初心者でもすぐに習得できます。JavaScriptも、最初は難しく感じるかもしれませんが、少しずつ学んでいけば、誰でも楽しく学べるようになります。今では多くの無料学習サイトや動画があり、自宅にいながらも学べる環境が整っています。</p>
+
+        <h2>プログラミングと英語</h2>
+        <p>そしてもう一つ興味深い事実として、プログラミングができるようになると、自然と英語も得意になってくるかもしれません。なぜなら、プログラミング言語の構文や命令はほとんどが英語で書かれているからです。また、エラーメッセージやドキュメント、チュートリアルなどもほとんど英語で提供されています。英語に触れる機会が多くなるので、プログラミングを学ぶことで自然と英語力も身につく可能性が高いです！</p>
+
+        <h2>まとめ</h2>
+        <p>このように、ウェブサイトのプログラミングにはHTML、CSS、そしてJavaScriptという3つの言語が不可欠です。それぞれの言語が役割を持ち、ページの骨組み、デザイン、そして動きを作り出します。プログラミングは誰でも学べるスキルで、興味があれば今日からでも始めることができます。プログラミングを始めることで、もしかしたら英語力も自然に向上するかもしれません。このサイトがどのように動いているのか、その裏側を知ることで、あなたもプログラミングの世界に一歩踏み出してみてはいかがでしょうか？</p>
+    </div>
+</body>
+  <script>function toggleSidebar() {
+      var sidebar = document.getElementById("sidebar");
+      var toggleButton = document.getElementById("toggleButton");
+
+      if (sidebar.classList.contains("open")) {
+        sidebar.classList.remove("open");  // サイドバーを閉じる
+        toggleButton.innerHTML = "☰";     // ボタンを「☰」に戻す
+      } else {
+        sidebar.classList.add("open");     // サイドバーを開く
+        toggleButton.innerHTML = "×";      // ボタンを「×」に変更
+      }
+    }</script>
+</html>
