@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>僕のマスコットキャラクターができました。</title>
+    <link rel="stylesheet">
+</head>
+<body>
+  <div id="main">
+    <p style="font-weight: bold; color:black;">2024年10月13日</p>
+    
+    <!-- チャットのメッセージ -->
+    <div class="chat">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.X0joAWe3KjQZ_z2pjsxp2AHaHa?w=30&h=70" alt="じゃく">
+      <div class="border">
+        こんにちわ。最弱から<b>じゃく</b>になりました。どっちも変わらないんですけどね（笑）
+      </div>
+    </div>
+
+    <div class="chat">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.X0joAWe3KjQZ_z2pjsxp2AHaHa?w=30&h=70" alt="じゃく">
+      <div class="border">
+        お知らせの通り、僕のオリジナルキャラクターができました！(かわいいでしょ)
+      </div>
+    </div>
+    
+     <div class="chat">
+      <img src="https://hiyokoyarou.com/wp-content/uploads/2023/07/shiroi-inu.png" alt="じゃく">
+      <div class="border">
+        僕だってかわいいよ！
+      </div>
+    </div>
+    
+     <div class="chat">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.X0joAWe3KjQZ_z2pjsxp2AHaHa?w=30&h=70" alt="じゃく">
+      <div class="border">
+       あ、いたんだ...
+      </div>
+    </div>
+    
+         <div class="chat">
+      <img src="https://hiyokoyarou.com/wp-content/uploads/2023/07/shiroi-inu.png" alt="じゃく">
+      <div class="border">
+       失礼な人ですな... あ、自己紹介忘れてた...
+      </div>
+    </div>
+    
+      <div class="chat">
+      <img src="https://hiyokoyarou.com/wp-content/uploads/2023/07/shiroi-inu.png" alt="じゃく">
+      <div class="border">
+        どうもこんにちは。僕はじゃくの助手の<b>ココツ</b>です。よろしくお願いします。
+      </div>
+    </div>
+    
+     <div class="chat">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.X0joAWe3KjQZ_z2pjsxp2AHaHa?w=30&h=70">
+      <div class="border">
+      みんなこれからもよろしくね！
+      </div>
+    </div>
+    <p>この人達は色々と変なことをやらかしますが、よろしくお願いします。あと、なんでじゃくだけ画像の画質が悪いんだ...?</p>
+  </div>
+</body>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.chat {
+    display: flex; /* flexboxでアイコンと吹き出しを横並びに */
+    align-items: center; /* 中央揃え */
+    margin-bottom: 20px; /* メッセージ間のスペース */
+}
+
+.chat img {
+    width: 10%; /* アイコンのサイズを大きく */
+    height: 60%; /* アイコンのサイズを大きく */
+    margin-right: 10px; /* アイコンと吹き出しの間のスペース */
+}
+
+.border {
+    background-color: #f0f0f0;
+    padding: 40px; /* 吹き出しの中の余白を大きく */
+    border-radius: 15px; /* 吹き出しの角を丸く */
+    display: inline-block;
+    position: relative; /* 三角形の位置を相対的に配置 */
+    max-width: 500px; /* 吹き出し本体の最大幅 */
+    font-size: 24px; /* テキストサイズを大きく */
+    margin-left: 10px; /* 吹き出しの左寄せ */
+}
+
+.border::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent; /* 上部分を透明に */
+    border-bottom: 30px solid transparent; /* 下部分を透明に */
+    border-right: 40px solid #f0f0f0; /* 吹き出しの背景色と同じ */
+    position: absolute;
+    left: -40px; /* 吹き出しの左側に配置 */
+    top: 50%; /* 吹き出しの中央に配置 */
+    transform: translateY(-50%); /* 高さを中央に調整 */
+}
+
+  </style>
+</html>
