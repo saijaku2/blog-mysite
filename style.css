@@ -1,3 +1,51 @@
+#loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.circle-spin-1 {
+  --size: 48px;
+  --stroke-width: calc(var(--size) / 6);
+  --color: #fff;
+  --animation-timing-function: linear;
+  --animation-duration: 1s;
+  width: var(--size);
+  height: var(--size);
+  border-width: var(--stroke-width);
+  border-style: solid;
+  border-color: var(--color) var(--color) var(--color) transparent;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  animation: circle-spin-1-animation var(--animation-duration) infinite var(--animation-timing-function);
+}
+
+@keyframes circle-spin-1-animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body.loaded #loading {
+  display: none;
+}
+
+body.loaded .content {
+  opacity: 1;
+}
+
+.content {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
 body {
   background-color:#111111;
     background-size: cover;
