@@ -1,5 +1,3 @@
-
-
 function toggleSidebar() {
       var sidebar = document.getElementById("sidebar");
       var toggleButton = document.getElementById("toggleButton");
