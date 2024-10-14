@@ -166,6 +166,19 @@ body {
       height:10vh;
  margin-top:500vh;   
     }
+/* ライトテーマ */
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.light-mode .sidebar {
+  background-color: #dddddd;
+}
+
+.light-mode .sidebar a {
+  color: #000000;
+}
 
 #themeToggle {
     background-color: #007bff;
