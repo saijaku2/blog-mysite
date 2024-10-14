@@ -1,4 +1,10 @@
-
+body {
+  background-color:#111111;
+    background-size: cover;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  transition: background-color 0.5s, color 0.5s;
+}
     /* サイドバーのスタイル */
     .sidebar {
       height: 100%;
