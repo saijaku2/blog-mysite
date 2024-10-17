@@ -189,16 +189,16 @@ body {
 }
 
 #scrollButton1 {
-    bottom: 80px;
-    right: 7em;
+    bottom: 100px;
+    right: 30em;
     width: 50px; /* 画像の幅 */
     height: 50px; /* 画像の高さ */
   
 }
 
 #scrollButton2 {
-    bottom: 20px;
-    right: 10em;
+    bottom: 80px;
+    right: 30em;
     width: 50px; /* 画像の幅 */
     height: 70px; /* 画像の高さ */
   
