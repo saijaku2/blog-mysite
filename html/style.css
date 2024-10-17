@@ -9,27 +9,49 @@ body {
     margin: 0;
 }
 
-/* サイドバーのスタイル */
-.sidebar {
-    height: 100%;
-    width: 0;  /* 初期状態では閉じる */
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #333333;
-    overflow-x: hidden;
-    transition: 0.3s;  /* 開閉時のアニメーション */
-    padding-top: 60px;
-}
+   /* サイドバーのスタイル */
+    .sidebar {
+      height: 100%;
+      width: 0;  /* 初期状態では閉じる */
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333333;
+      overflow-x: hidden;
+      transition: 0.3s;  /* 開閉時のアニメーション */
+      padding-top: 60px;
+    }
 
-/* サイドバーのリンクのスタイル */
-.sidebar a {
-    padding: 15px 10px;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    display: block;
-    transition: 0.2s;
+    /* サイドバーのリンクのスタイル */
+    .sidebar a {
+      padding: 15px 10px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.2s;
+    }
+
+    .sidebar a:hover {
+      background-color: #575757;
+    }
+
+    /* サイドバーを開閉するボタン */
+    .open-btn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      border-radius:20%;
+    }
+    /* サイドバーが開いている時のスタイル */
+    .sidebar.open {
+      width: 250px;
 }
 /* 記事タイトルのスタイル */
 .article-title {
