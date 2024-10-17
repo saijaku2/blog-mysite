@@ -190,18 +190,18 @@ body {
 
 #scrollButton1 {
     bottom: 80px;
-    right: 20px;
+    right: 7em;
     width: 50px; /* 画像の幅 */
     height: 50px; /* 画像の高さ */
-    background-image: url('https://example.com/your-first-image.png'); /* 最初の画像URL */
+  
 }
 
 #scrollButton2 {
     bottom: 20px;
-    right: 20px;
+    right: 10em;
     width: 50px; /* 画像の幅 */
-    height: 50px; /* 画像の高さ */
-    background-image: url('https://typingerz.com/wp-content/uploads/2017/11/scrollarrowshita2-3.png'); /* 2つ目の画像URL */
+    height: 70px; /* 画像の高さ */
+  
 }
 
 
