@@ -22,3 +22,12 @@ window.onscroll = function() {
 document.getElementById("topButton").onclick = function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
+function smoothScroll() {
+    window.scrollBy({ top: 300, behavior: 'smooth' }); // 300px スクロール
+}
+
+function smoothScroll2() {
+    window.scrollBy({ top: 600, behavior: 'smooth' }); // 600px スクロール
+}
+document.getElementById("scrollButton1").onclick = smoothScroll;
+document.getElementById("scrollButton2").onclick = smoothScroll2;
