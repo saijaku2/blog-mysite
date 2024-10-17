@@ -102,7 +102,7 @@ body {
 }
 .top-button {
     position: fixed;
-    bottom: 60px; /* 画像の下に配置 */
+    bottom: 300px; /* 画像の下に配置 */
     right: 20px; /* 右からの距離 */
     display: none; /* 初期は非表示 */
     width: 50px;
