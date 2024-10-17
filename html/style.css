@@ -169,3 +169,20 @@ body {
   top:130vh;
   left:200px;
 }
+        #fixed:link {
+            color: blue; /* 未訪問リンクの色 */
+            text-decoration: none; /* 下線をなくす */
+        }
+
+        #fixed:visited {
+            color: blue; /* 訪問済みリンクの色 */
+        }
+
+        #fixed:hover {
+            color: blue; /* ホバー時の色 */
+          text-decoration:underline;
+        }
+
+        #fixed:active {
+            color: blue; /* アクティブ時の色 */
+        }
