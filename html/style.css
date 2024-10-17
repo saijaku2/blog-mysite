@@ -158,10 +158,9 @@ body {
       text-align: center;
       background-color: #2f3030;
       height:10vh;
- margin-top:500vh;   
-      position:relative;
+ margin-top:500vh; 
     }
-    .gotop {
+        .gotop {
             display: block;
             width: 50px; /* サイズ調整 */
             height: 50px; /* サイズ調整 */
@@ -176,11 +175,14 @@ body {
             right: 20px; /* 右からの距離 */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* シャドウ */
             transition: background-color 0.3s; /* ホバー時の色変更 */
+            display: none; /* 初期状態では非表示 */
+            z-index: 1000; /* 他のコンテンツの上に表示 */
         }
 
         .gotop:hover {
             background-color: darkblue; /* ホバー時の色 */
         }
+
 
 #themeToggle {
     background-color: #007bff;
