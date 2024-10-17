@@ -105,15 +105,6 @@ body::after {
   margin-bottom: 1em;
 }
 
-/* "New!"ラベルのスタイル */
-.new-label {
-  font-size: 40px;
-  font-weight: 700;
-  color: red;
-  margin-left: auto; /* 右端に配置 */
-  margin-bottom: 1em;
-}
-
 /* テキスト内容のスタイル */
 .text1 {
   font-size: 20px;
@@ -166,19 +157,6 @@ body {
       height:10vh;
  margin-top:500vh;   
     }
-/* ライトテーマ */
-.light-mode {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.light-mode .sidebar {
-  background-color: #dddddd;
-}
-
-.light-mode .sidebar a {
-  color: #000000;
-}
 
 #themeToggle {
     background-color: #007bff;
@@ -190,19 +168,4 @@ body {
  position:absolute;
   top:130vh;
   left:200px;
-}
-#fixed {
-  color: blue;  /* リンクの通常状態の色を青に */
-}
-
-#fixed:visited {
-  color: blue;  /* 訪問済みリンクの色を青に */
-}
-
-#fixed:hover {
-  color: blue;  /* ホバー時のリンクの色を青に */
-}
-
-#fixed:active {
-  color: blue;  /* クリックした時のリンクの色を青に */
 }
