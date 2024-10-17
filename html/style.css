@@ -191,18 +191,18 @@ body {
   top:130vh;
   left:200px;
 }
-a {
+#fixed {
   color: blue;  /* リンクの通常状態の色を青に */
 }
 
-a:visited {
+#fixed:visited {
   color: blue;  /* 訪問済みリンクの色を青に */
 }
 
-a:hover {
+#fixed:hover {
   color: blue;  /* ホバー時のリンクの色を青に */
 }
 
-a:active {
+#fixed:active {
   color: blue;  /* クリックした時のリンクの色を青に */
 }
