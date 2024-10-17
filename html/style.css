@@ -1,65 +1,58 @@
-html{
-  scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
+
 body {
-  background-color:#111111;
-    background-size: cover;
-  font-family: 'Arial', sans-serif;
-  color: #fff;
-  transition: background-color 0.5s, color 0.5s;
-}
-    /* サイドバーのスタイル */
-    .sidebar {
-      height: 100%;
-      width: 0;  /* 初期状態では閉じる */
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: #333333;
-      overflow-x: hidden;
-      transition: 0.3s;  /* 開閉時のアニメーション */
-      padding-top: 60px;
-    }
-
-    /* サイドバーのリンクのスタイル */
-    .sidebar a {
-      padding: 15px 10px;
-      text-decoration: none;
-      font-size: 18px;
-      color: white;
-      display: block;
-      transition: 0.2s;
-    }
-
-    .sidebar a:hover {
-      background-color: #575757;
-    }
-
-    /* サイドバーを開閉するボタン */
-    .open-btn {
-      font-size: 20px;
-      cursor: pointer;
-      background-color: #111;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      border-radius:20%;
-    }
-    /* サイドバーが開いている時のスタイル */
-    .sidebar.open {
-      width: 250px;
-}
-body {
+    background-color: #111111;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
     margin: 0;
-    font-family: Arial, sans-serif;
+}
+
+/* サイドバーのスタイル */
+.sidebar {
+    height: 100%;
+    width: 0;  /* 初期状態では閉じる */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333333;
+    overflow-x: hidden;
+    transition: 0.3s;  /* 開閉時のアニメーション */
+    padding-top: 60px;
+}
+
+/* サイドバーのリンクのスタイル */
+.sidebar a {
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+/* サイドバーを開閉するボタン */
+.open-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border-radius: 20%;
 }
 
 /* タイトル部分に背景画像を設定 */
 .title {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGteH0LDet0636ouB3OWElcInVYOrHZ9prdw&s'); /* 画像パスを指定 */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGteH0LDet0636ouB3OWElcInVYOrHZ9prdw&s');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -72,101 +65,50 @@ body {
 .title h1 {
     font-size: 600%; /* 元のサイズを維持 */
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* テキストの影を追加 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     margin: 0;
 }
-/* 黒い背景を設定 */
-body::after {
-    content: "";
-    position: absolute;
-    top: 300px; /* タイトル部分の下から始まるように調整 */
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 200px); /* 残りのページ全体を黒背景にする */
-  
-    z-index: -1; /* これがコンテンツの後ろに表示されるようにする */
-}
-/* すべてのボーダー付きのブログコンテンツを中央に整列 */
-/* すべてのボーダー付きのブログコンテンツを中央に整列 */
+
+/* ボーダー付きのブログコンテンツ */
 .border1 {
-  display: flex;
-  flex-direction: column; /* 中の要素を縦に並べる */
-  border: 3px solid #4d4d4d; /* 個々のボーダー */
-  border-radius: 15px;
-  padding: 2em;
-  width: 600px;
-  margin: 20px auto; /* 横幅を中央に配置 */
-  text-align: left; /* テキストを左寄せ */
-  background-color: #222; /* 背景色を追加 */
-  box-sizing: border-box; /* パディング込みでサイズを調整 */
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #4d4d4d;
+    border-radius: 15px;
+    padding: 2em;
+    width: 600px;
+    margin: 20px auto; /* 横幅を中央に配置 */
+    text-align: left; /* テキストを左寄せ */
+    background-color: #222; /* 背景色を追加 */
 }
 
-/* 記事タイトルのスタイル */
-.article-title {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 1em;
-}
-
-/* テキスト内容のスタイル */
-.text1 {
-  font-size: 20px;
-  margin-bottom: 1em;
-}
-
-/* "続きを読む"ボタンのスタイル */
-.read-more {
-  color: #4d90fe;
-  text-decoration: none;
-  font-size: 18px;
-  margin-top: 1em;
-  align-self: flex-end; /* ボタンを右寄せにする */
-}
-
-h1 {
-  text-align: center; /* タイトルを中央寄せ */
-}
-
-/* アニメーションを修正してズレを解消 */
-@keyframes slideIn {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.border1 {
-  opacity: 0;
-  animation: slideIn 1s forwards;
-}
-
-/* 追加: body全体に不必要なボーダーがあれば削除する */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #111111; /* 背景色のみ設定 */
-}
-
-    /* フッターのスタイル */
-    .custom-footer {
-      border-top: 2px solid #333;
-      padding: 10px;
-      text-align: center;
-      background-color: #2f3030;
-      height:10vh;
- margin-top:500vh; 
-    }
- .top-button {
+/* スクロールボタンと画像のスタイル */
+.scroll-button {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    width: 50px; /* ボタンの幅 */
-    height: 50px; /* ボタンの高さ */
+    width: 50px; /* 画像の幅 */
+    height: 50px; /* 画像の高さ */
+    cursor: pointer;
+}
+
+#scrollButton1 {
+    bottom: 80px; /* ボタンの位置 */
+    right: 120px; /* 右からの距離 */
+    display: none; /* 初期は非表示 */
+}
+
+#scrollButton2 {
+    bottom: 20px; /* ボタンの位置 */
+    right: 120px; /* 右からの距離 */
+    display: none; /* 初期は非表示 */
+}
+
+.top-button {
+    position: fixed;
+    bottom: 20px; /* 画像の下に配置 */
+    right: 20px; /* 右からの距離 */
+    display: none; /* 初期は非表示 */
+    width: 50px;
+    height: 50px;
     background-color: #007BFF;
     color: white;
     border: none;
@@ -180,56 +122,11 @@ body {
 .top-button:hover {
     background-color: #0056b3;
 }
-.scroll-button {
-    position: fixed;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
+
+/* フッターのスタイル */
+.custom-footer {
+    border-top: 2px solid #333;
+    padding: 10px;
+    text-align: center;
+    background-color: #2f3030;
 }
-
-#scrollButton1 {
-    bottom: 100px;
-    right: 30em;
-    width: 50px; /* 画像の幅 */
-    height: 50px; /* 画像の高さ */
-  
-}
-
-#scrollButton2 {
-    bottom: 80px;
-    right: 30em;
-    width: 50px; /* 画像の幅 */
-    height: 70px; /* 画像の高さ */
-  
-}
-
-
-#themeToggle {
-    background-color: #007bff;
-    color: white;
-    border:none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
- position:absolute;
-  top:130vh;
-  left:200px;
-}
-        #fixed:link {
-            color: blue; /* 未訪問リンクの色 */
-            text-decoration: none; /* 下線をなくす */
-        }
-
-        #fixed:visited {
-            color: blue; /* 訪問済みリンクの色 */
-        }
-
-        #fixed:hover {
-            color: blue; /* ホバー時の色 */
-          text-decoration:underline;
-        }
-
-        #fixed:active {
-            color: blue; /* アクティブ時の色 */
-        }
