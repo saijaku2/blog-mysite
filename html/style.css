@@ -97,7 +97,9 @@ body {
     line-height: 50px; /* テキストを中央に配置 */
     font-size: 18px; /* テキストサイズ */
 }
-
+.down-button:hover {
+    background-color: #0056b3;
+}
 .top-button {
     position: fixed;
     bottom: 60px; /* 画像の下に配置 */
