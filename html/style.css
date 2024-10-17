@@ -31,7 +31,12 @@ body {
     display: block;
     transition: 0.2s;
 }
-
+/* 記事タイトルのスタイル */
+.article-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
 .sidebar a:hover {
     background-color: #575757;
 }
@@ -71,15 +76,21 @@ body {
 
 /* ボーダー付きのブログコンテンツ */
 .border1 {
-    display: flex;
-    flex-direction: column;
-    border: 3px solid #4d4d4d;
-    border-radius: 15px;
-    padding: 2em;
-    width: 600px;
-    margin: 20px auto; /* 横幅を中央に配置 */
-    text-align: left; /* テキストを左寄せ */
-    background-color: #222; /* 背景色を追加 */
+  display: flex;
+  flex-direction: column; /* 中の要素を縦に並べる */
+  border: 3px solid #4d4d4d; /* 個々のボーダー */
+  border-radius: 15px;
+  padding: 2em;
+  width: 600px;
+  margin: 20px auto; /* 横幅を中央に配置 */
+  text-align: left; /* テキストを左寄せ */
+  background-color: #222; /* 背景色を追加 */
+  box-sizing: border-box; /* パディング込みでサイズを調整 */
+}
+/* テキスト内容のスタイル */
+.text1 {
+  font-size: 20px;
+  margin-bottom: 1em;
 }
 .down-button {
     position: fixed;
@@ -116,7 +127,29 @@ body {
     line-height: 50px; /* テキストを中央に配置 */
     font-size: 18px; /* テキストサイズ */
 }
+.read-more {
+  color: #4d90fe;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 1em;
+  align-self: flex-end; /* ボタンを右寄せにする */
+}
+/* アニメーションを修正してズレを解消 */
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
+.border1 {
+  opacity: 0;
+  animation: slideIn 1s forwards;
+}
 .top-button:hover {
     background-color: #0056b3;
 }
