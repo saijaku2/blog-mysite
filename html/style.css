@@ -161,16 +161,26 @@ body {
  margin-top:500vh;   
       position:relative;
     }
-.gotop{
-  display:block;
-  width:2.5em;
-  aspect-ratio:1;
-border-radius:50%;
-  cursor:pointer;
-  position:absolute;
-  inset:0 3rem auto auto;
-  translate:0 -50%;
-}
+    .gotop {
+            display: block;
+            width: 50px; /* サイズ調整 */
+            height: 50px; /* サイズ調整 */
+            border-radius: 50%;
+            background-color: blue; /* 背景色 */
+            color: white; /* テキスト色 */
+            text-align: center; /* テキストの中央揃え */
+            line-height: 50px; /* 縦中央揃え */
+            cursor: pointer;
+            position: fixed; /* 固定位置 */
+            bottom: 20px; /* 下からの距離 */
+            right: 20px; /* 右からの距離 */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* シャドウ */
+            transition: background-color 0.3s; /* ホバー時の色変更 */
+        }
+
+        .gotop:hover {
+            background-color: darkblue; /* ホバー時の色 */
+        }
 
 #themeToggle {
     background-color: #007bff;
