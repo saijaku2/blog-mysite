@@ -183,3 +183,14 @@ body {
     text-align: center;
     background-color: #2f3030;
 }
+#fixed{
+color:blue;
+text-decoration:none;
+}
+#fixed:hover{
+color:blue;
+text-decoration:underline;
+}
+#fixed:visted{
+color:blue;
+}
