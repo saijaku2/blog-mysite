@@ -182,15 +182,16 @@ body {
     padding: 10px;
     text-align: center;
     background-color: #2f3030;
+2f3030;
+}#fixed {
+  color: blue; /* 常に青 */
 }
-#fixed{
-color:blue;
-text-decoration:none;
+
+#fixed:visited,
+#fixed:hover,
+#fixed:active,
+#fixed:focus {
+  color: blue; /* クリック、ホバー、フォーカスしても青 */
 }
-#fixed:hover{
-color:blue;
-text-decoration:underline;
-}
-#fixed:visted{
-color:blue;
-}
+
+
