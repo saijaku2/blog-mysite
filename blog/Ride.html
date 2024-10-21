@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ペットのアップグレードとエンチャント</title>
-    <link rel="stylesheet" href="ride.css">
+    <link rel="stylesheet">
 </head>
     
 <body>
@@ -50,6 +50,140 @@
             <div class="answer">A. これをエンチャントするとTeam Playerと同様にペットが強くなります。エンチャントには25%と50%の2つしかない。ペットをアップグレードや大きくしないでこのどれか1つが出た場合は、エンチャントしたペットはその効果を発揮することになる。大きくしないで、アップグレードをしなかった場合。(ネオンやゴールドなどはしたことがないので省略) Normal pet BF1: エンチャントしたペットはベストペットの1.25(1+0.25=125%)倍を発揮する。例 ベストペット108B×25%=エンチャントしたペットは135Bの力を発揮する。Normal pet BF2: エンチャントしたペットはベストペットの1.5(1+0.5=150%)倍を発揮する。例 ベストペット108B×50%=エンチャントしたペットは165Bの力を発揮する。Huge+ダークマター+BFにした場合 BF1: エンチャントしたペットはベストペットの4(1×4=400%)倍を発揮する。(※実際400%ではなく約410%だが四捨五入をして約400%としている) 例 ベストペット108B×400%=エンチャントしたペットは432Bの力を発揮する。BF2: エンチャントをしたペットはベストペットの8(1×8=800%)倍を発揮する。(※実際800%ではなく約810%だが四捨五入をして約800%としている)例 ベストペット108B×800%=エンチャントしたペットは864Bの力を発揮する。以上。エンチャント一覧であった...</div>
         </div>
     </div>
+    <style>
+        /* style.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+ /* サイドバーのスタイル */
+    .sidebar {
+      height: 100%;
+      width: 0;  /* 初期状態では閉じる */
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333333;
+      overflow-x: hidden;
+      transition: 0.3s;  /* 開閉時のアニメーション */
+      padding-top: 60px;
+    }
+
+    /* サイドバーのリンクのスタイル */
+    .sidebar a {
+      padding: 15px 10px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.2s;
+    }
+
+    .sidebar a:hover {
+      background-color: #575757;
+    }
+
+    /* サイドバーを開閉するボタン */
+    .open-btn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      border-radius:20%;
+    }
+    /* サイドバーが開いている時のスタイル */
+    .sidebar.open {
+      width: 250px;
+}
+header{
+  font-size:60px;
+  font-weight:170px;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #444;
+    margin-top: 20px;
+}
+
+.qa-section {
+    margin: 10px 0;
+}
+
+.question {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.question:hover {
+    color: #0056b3;
+}
+
+.answer {
+    
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+.span1{
+  color:gold;
+}
+.span2{
+  color:#911d80;
+}
+.span3{
+  color:orange;
+}
+.span4{
+  color:lightgreen;
+}
+.span5{
+  color:#0e1a8a;
+}
+.span6{
+  color:blue;
+}
+ /* サイドバーのスタイル */
+    .sidebar {
+      height: 100%;
+      width: 0;  /* 初期状態では閉じる */
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333333;
+      overflow-x: hidden;
+      transition: 0.3s;  /* 開閉時のアニメーション */
+      padding-top: 60px;
+    }
+    </style>
     <script>function toggleSidebar() {
       var sidebar = document.getElementById("sidebar");
       var toggleButton = document.getElementById("toggleButton");
