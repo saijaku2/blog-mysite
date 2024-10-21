@@ -28,7 +28,7 @@
       <h2>①リポジトリを取る</h2>
       <p>まずGithubにログインして作成したファイルをリポジトリにアップロードします。
 無料で公開するにはパブリック リポジトリにする必要があります。</p>
-      <img src="https://docs.github.com/assets/cb-29762/images/help/repository/repo-create-global-nav-update.png">
+      <img src="../image/make.png">
       <h2>②ドメインを用意</h2>  
       <p>(これはやらなくても公開できますが短いURLが作れるのでやるのをおすすめします)<br>
 
@@ -37,7 +37,7 @@ WEBサイトを公開するにはドメインが必要ですがドメインは�
 
 DDNS Nowは永久無料で維持費やドメイン購入費などもかかりません。<br>
 .f5.siのサブドメインが取れて削除しない限り、他人にドメインが取られることがないという優れものです。</p>
-      <img src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F3638241%2F78595593-c2f4-1329-6256-b986b609051a.jpeg?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&w=1400&fit=max&s=d0eca650d73291bc31a80feb733c61ba">
+      <img src="../image/syutoku.png">
       <p>取得できたら設定のDNS設定を開いて「CNAMEレコードやURLリダイレクト」の項目に</p>
       <div class="code-frame">
   <div class="code-copy">
@@ -49,7 +49,6 @@ DDNS Nowは永久無料で維持費やドメイン購入費などもかかりま
   </div>
 </div>
       <p>と入れて保存します</p>
-      <img src="https://camo.qiitausercontent.com/c8ca9fd65c952eb34e8bc824643b351fa4755323/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f333633383234312f62633732323332622d316161362d653937302d356665612d3038623135646333386334632e6a706567">
       <h2>③TXTレコードを入力する。</h2>
         <p>しばらく下をスクロールを押すと、サブドメインを追加と書いてあるので、それを押します。</p>
 <img src="../image/TXTrecode.png">
@@ -62,16 +61,16 @@ DDNS Nowは永久無料で維持費やドメイン購入費などもかかりま
       <p>あとはverifyを押して、successが出れば成功です。これでDDNS nowの方は終わりです。</p>
         <h2>④Github pageで公開</h2>
         <p>最後にGithubに戻ってHTMLファイルなどを追加したら、リポジトリのSettingからPagesを開きます。</p>
-      <img src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F3638241%2Ff1dc4cf7-c1a6-02fe-f23d-c68b30d72554.jpeg?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&w=1400&fit=max&s=5224684d13e5c86cc32f5fa730d5cead">
+      <img src="../image/save.png">
       <p>なぜかカスタムドメインの枠がないので一回SourceをGithub ActionsにしてDeploy from a branchにもどします。<br>
 次に、Branchをnoneからmainに変更してsaveボタンを押します。
         
 最後にデプロイするブランチとさっき取得したサブドメインを入力してSaveを押します</p>
-      <img src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F3638241%2F64c9d34a-54d4-aa67-2813-07fc59791845.jpeg?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&w=1400&fit=max&s=f2a2c94d43bc9e62a804bf7e62b75541">
+      <img src="../image/mistery.png">
       <p>するとDNS Check in Progressとなるので終わるまで待機します</p>
-      <img src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F3638241%2Ff257e49e-1822-a7be-84d9-b378b3da1502.jpeg?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&w=1400&fit=max&s=f9bf81e9311031daaa28034dfdd86a27">
+      <img src="../image/custom.png">
       <p>DNS check successfulとなってしばらくするとこのような表示になってアクセスできるようになります</p>
-      <img src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F3638241%2F94dd8725-97f3-5025-65f9-48b5e931e333.jpeg?ixlib=rb-4.0.0&auto=format&gif-q=60&q=75&w=1400&fit=max&s=22dc669bf03a542d7596808e89945fc8">
+      <img src="../image/type.png">
       <p>これで終わりです！お疲れさまでした！</p>
     </div>
 </body>
